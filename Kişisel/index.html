@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>Canpolat Kaya</title>
+  <link rel="stylesheet" href="Kişisel.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+</head>
+<body>
+  <nav>
+    <h2>Canpolat Kaya</h2>
+    <ul>
+      <li><a href="#açıkla">Hakkımda</a></li>
+      <li><a href="#Projeler">Projeler</a></li>
+      <li><a href="#iletisim">İletişim</a></li>
+    </ul>
+  </nav>
+
+  <article>
+    <section>
+      <h1 id="Canpolat">Merhaba, Ben Canpolat</h1>
+      <h3 id="Developer">Full-Stack Developer</h3>
+      <p id="açıkla">
+        Merhabalar Ben Canpolat Kaya Ben Full Stack Developer'ım Yani en azından olmaya çalışıyorum.  Ben 20 Yaşındayım Kodlamaya 17 yaşımda adım attım ancak o zamanlar pek birşey anlamadığım ve bilgisayarımın eski olmasından dolayı tamamen yazılım dünyasına giriş yapamadım. Ancak Üniversiteye gittiğim zaman gerçekten yazılıma giriş yapabilmiştim
+        Üniversiteyi Tokat Gaziosmanpaşa Üniversitesinde okuyorum ve 2. Sınıf Bilgisayar Programcılığı okuyorum <br> <br> Yazılımdaki yolculuğumu Tamamen planlamış değilim Bir Yanım Oyun Geliştirme Bir yanımda web uygulaması veya Backend istiyor Şuanlık Çok fazla tecrübem yok ancak her zaman kendimi geliştirmeye çalışıyorum. Bir yandan da
+        Barmenlik yaparak Hem kendimi finansal açıdan güçlendirmeye hemde yeni insanlar tanıyıp sosyal çevremide geliştiriyorum Aslında amatör bir yazılımcı olarak bu gerçekten önemli birşey barmenlikten kazandığım paraylada genellikle aileme ve yazılıma yatırım yapıyorum
+        <br> <br> Hobilerim Video oyunları oynamak , Spor yapmak denilebilir aslında pek çeşitli bir hobim olduğunu söyleyemem </p> <br> <h3 id="Projeler" >Projelerim</h3> 
+
+  <!-- Butonları kapsayan container -->
+<div style="display:flex; justify-content:center; gap:20px; margin:30px 0;">
+    <!-- Not Uygulaması Butonu -->
+    <a href="not.html" target="_blank" 
+       style="
+            display:inline-block;
+            background-color:#00bfa6; 
+            color:white; 
+            padding:12px 25px; 
+            border-radius:12px; 
+            font-weight:600; 
+            text-decoration:none;
+            box-shadow:0 5px 15px rgba(0,0,0,0.3);
+            transition:0.3s;
+        "
+       onmouseover="this.style.backgroundColor='#00a890'; this.style.transform='scale(1.05)';"
+       onmouseout="this.style.backgroundColor='#00bfa6'; this.style.transform='scale(1)';"
+    >
+        Not Uygulamasını Aç
+    </a>
+
+    <!-- Hava Durumu Butonu -->
+    <a href="hava.html" target="_blank" 
+       style="
+            display:inline-block;
+            background-color:#1e90ff; 
+            color:white; 
+            padding:12px 25px; 
+            border-radius:12px; 
+            font-weight:600; 
+            text-decoration:none;
+            box-shadow:0 5px 15px rgba(0,0,0,0.3);
+            transition:0.3s;
+        "
+       onmouseover="this.style.backgroundColor='#63b3ed'; this.style.transform='scale(1.05)';"
+       onmouseout="this.style.backgroundColor='#1e90ff'; this.style.transform='scale(1)';"
+    >
+        Hava Durumunu Aç
+    </a>
+</div>
+
+
+
+    <section id="iletisim" class="iletisim">
+      <h2>İletişim</h2>
+
+<section id="iletisim" class="iletisim">
+  <h2>İletişim</h2>
+
+  <form class="iletisim-formu" action="https://formspree.io/f/xkgzeqng" method="POST">
+    <label for="ad">Adınız</label>
+    <input type="text" id="ad" name="ad" placeholder="Adınız" required>
+
+    <label for="email">E-posta</label>
+    <input type="email" id="email" name="email" placeholder="E-posta" required>
+
+    <label for="mesaj">Mesajınız</label>
+    <textarea id="mesaj" name="mesaj" rows="5" placeholder="Mesajınız" required></textarea>
+
+    <button type="submit">Gönder</button>
+  </form>
+
+  <div class="ikonlar">
+    <a href="https://x.com/canpola96879045" target="_blank"><i class="fab fa-x-twitter"></i></a>
+    <a href="https://instagram.com/cann.x_0" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="mailto:Canpolatkaya4@gmail.com"><i class="fas fa-envelope"></i></a>
+  </div>
+</section>
+
+<style>
+.iletisim-formu {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 20px;
+  max-width: 500px;
+}
+
+.iletisim-formu label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.iletisim-formu input,
+.iletisim-formu textarea {
+  background-color: #1a1a1a;
+  border: 1px solid #333;
+  padding: 12px;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 16px;
+  resize: none;
+}
+
+.iletisim-formu button {
+  background-color: #00bfa6;
+  color: #fff;
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.iletisim-formu button:hover {
+  background-color: #00a890;
+
+  
+}
+.tema-butonu {
+  background-color: #1e90ff;
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  padding: 12px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.tema-butonu:hover {
+  background-color: #63b3ed;
+  transform: scale(1.05);
+}
+
+</style>
+
+
+
+<script src="Kişisel.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const havaButton = document.getElementById("havaButton");
+    if (havaButton) {
+        havaButton.addEventListener("click", function() {
+            // hava.html dosyasının yolu doğru olmalı
+            window.open("hava.html", "_blank"); // Yeni sekmede açar
+        });
+    }
+});
+</script>
+
+</body>
+</html>
